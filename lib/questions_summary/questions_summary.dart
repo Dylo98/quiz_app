@@ -12,13 +12,11 @@ class QuestionsSummary extends StatelessWidget {
       height: 300,
       child: SingleChildScrollView(
         child: Column(
-          children: [
-            ...summaryData.map(
-              (data) {
-                return SummaryItem(data);
-              },
-            ),
-          ],
+          children: summaryData.map(
+            (data) {
+              return SummaryItem(data);
+            },
+          ).toList(),
         ),
       ),
     );
