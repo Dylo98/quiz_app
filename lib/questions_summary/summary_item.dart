@@ -13,7 +13,6 @@ class SummaryItem extends StatelessWidget {
         itemData['user_answer'] == itemData['correct_answer'];
 
     return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         QuestionIdentifier(
